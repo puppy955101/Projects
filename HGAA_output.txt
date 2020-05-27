@@ -1,0 +1,1486 @@
+success 1 0 1
+1 9 -1 1 1 15 20
+1 7 -1 1 2 15 19
+success 2 0 1
+success 2 1 0
+2 3 -1 0 2 18 0
+success 3 0 1
+success 3 1 0
+success 3 2 1
+4 11 -1 1 0 19 21
+success 4 1 0
+success 4 2 1
+success 5 0 0
+5 4 -1 0 1 18 20
+success 5 2 1
+success 6 0 0
+success 6 1 1
+6 3 -1 1 2 20 20
+success 7 0 0
+success 7 1 1
+success 7 2 0
+8 5 -1 0 0 19 22
+success 8 1 1
+success 8 2 0
+success 9 0 1
+9 4 -1 1 1 21 22
+success 9 2 0
+success 10 0 1
+success 10 1 0
+10 2 -1 0 2 20 20
+success 11 0 1
+success 11 1 0
+11 1 -1 1 2 21 0
+success 12 0 1
+success 12 1 0
+success 12 2 0
+success 13 0 1
+13 2 -1 0 1 21 0
+success 13 2 0
+success 14 0 1
+success 14 1 1
+success 14 2 0
+15 5 -1 1 0 22 25
+success 15 1 1
+success 15 2 0
+success 16 0 0
+success 16 1 1
+16 0 -1 0 2 22 0
+success 17 0 0
+success 17 1 1
+17 0 -1 1 2 22 0
+success 18 0 0
+success 18 1 1
+success 18 2 1
+success 19 0 0
+19 2 -1 1 1 23 0
+success 19 2 1
+success 20 0 0
+success 20 1 2
+success 20 2 1
+14
+1 3 2 
+22 23 19 
+Time: 0s
+success 1 0 4
+success 1 1 0
+1 25 -1 0 2 16 18
+1 4 -1 0 3 16 0
+1 13 -1 0 4 16 18
+1 17 -1 0 5 16 0
+1 26 -1 0 6 16 18
+1 14 -1 0 7 16 0
+1 23 -1 0 8 16 18
+success 1 9 1
+success 2 0 4
+success 2 1 0
+success 2 2 0
+success 2 3 1
+2 11 -1 0 4 18 20
+2 17 -1 1 5 17 18
+2 24 -1 0 6 18 20
+2 14 -1 1 7 17 18
+2 21 -1 0 8 18 20
+2 25 -1 1 9 17 21
+success 3 0 4
+3 16 -1 0 1 18 0
+success 3 2 0
+success 3 3 1
+3 11 -1 1 4 17 19
+success 3 5 2
+3 24 -1 1 6 17 19
+3 14 -1 2 7 18 19
+3 21 -1 1 8 17 19
+3 21 -1 0 9 18 19
+success 4 0 4
+success 4 1 1
+success 4 2 0
+4 4 -1 1 3 17 18
+success 4 4 0
+success 4 5 2
+4 22 -1 0 6 20 22
+success 4 7 3
+4 19 -1 0 8 20 24
+success 4 9 1
+success 5 0 4
+5 16 -1 1 1 21 20
+5 23 -1 0 2 20 20
+success 5 3 2
+success 5 4 0
+5 17 -1 2 5 18 19
+5 22 -1 1 6 21 21
+success 5 7 3
+5 19 -1 1 8 21 23
+success 5 9 1
+success 6 0 4
+success 6 1 2
+6 23 -1 1 2 21 19
+6 4 -1 2 3 18 19
+success 6 4 0
+success 6 5 3
+6 22 -1 2 6 18 20
+6 14 -1 3 7 19 20
+6 19 -1 2 8 18 22
+success 6 9 1
+success 7 0 4
+success 7 1 2
+7 21 -1 2 2 18 19
+success 7 3 3
+success 7 4 0
+7 17 -1 3 5 19 20
+success 7 6 0
+7 14 -1 4 7 20 21
+success 7 8 0
+success 7 9 1
+success 8 0 4
+success 8 1 2
+8 20 -1 0 2 24 22
+success 8 3 3
+8 9 -1 0 4 24 22
+8 17 -1 4 5 20 21
+8 20 -1 0 6 24 23
+success 8 7 5
+success 8 8 0
+success 8 9 1
+success 9 0 4
+success 9 1 2
+success 9 2 2
+success 9 3 3
+9 9 -1 1 4 21 21
+success 9 5 5
+success 9 6 2
+9 14 -1 5 7 21 22
+success 9 8 0
+success 9 9 1
+success 10 0 4
+10 16 -1 2 1 20 21
+10 20 -1 2 2 20 20
+success 10 3 3
+10 9 -1 2 4 20 20
+success 10 5 5
+success 10 6 2
+success 10 7 6
+success 10 8 0
+success 10 9 1
+success 11 0 4
+success 11 1 3
+11 19 -1 3 2 19 20
+11 4 -1 3 3 19 20
+11 7 -1 3 4 19 20
+success 11 5 5
+success 11 6 2
+success 11 7 6
+success 11 8 0
+success 11 9 1
+success 12 0 4
+success 12 1 3
+success 12 2 1
+12 4 -1 4 3 20 21
+12 6 -1 1 4 22 23
+success 12 5 5
+success 12 6 2
+success 12 7 6
+success 12 8 0
+12 21 -1 1 9 22 24
+success 13 0 4
+success 13 1 3
+success 13 2 1
+success 13 3 5
+success 13 4 2
+13 17 -1 5 5 21 22
+13 20 -1 2 6 21 21
+success 13 7 6
+success 13 8 0
+13 21 -1 2 9 21 21
+success 14 0 4
+success 14 1 3
+success 14 2 1
+success 14 3 5
+success 14 4 2
+success 14 5 6
+14 20 -1 3 6 19 20
+14 14 -1 6 7 22 23
+success 14 8 0
+14 21 -1 3 9 19 22
+success 15 0 4
+success 15 1 3
+success 15 2 1
+success 15 3 5
+success 15 4 2
+success 15 5 6
+15 19 -1 1 6 22 23
+success 15 7 7
+success 15 8 0
+15 18 -1 0 9 24 20
+success 16 0 4
+success 16 1 3
+success 16 2 1
+success 16 3 5
+success 16 4 2
+success 16 5 6
+success 16 6 3
+success 16 7 7
+success 16 8 0
+success 16 9 1
+success 17 0 4
+17 16 -1 3 1 20 22
+17 18 -1 1 2 24 23
+success 17 3 5
+success 17 4 2
+success 17 5 6
+success 17 6 3
+success 17 7 7
+success 17 8 0
+success 17 9 1
+success 18 0 4
+18 16 -1 4 1 20 23
+success 18 2 2
+success 18 3 5
+18 6 -1 2 4 21 22
+success 18 5 6
+success 18 6 3
+success 18 7 7
+success 18 8 0
+success 18 9 1
+success 19 0 4
+success 19 1 5
+success 19 2 2
+19 4 -1 5 3 21 22
+success 19 4 3
+success 19 5 6
+19 19 -1 3 6 20 21
+success 19 7 7
+success 19 8 0
+success 19 9 1
+success 20 0 4
+success 20 1 5
+success 20 2 2
+success 20 3 6
+success 20 4 3
+20 17 -1 6 5 22 23
+20 18 -1 1 6 24 24
+success 20 7 7
+success 20 8 0
+success 20 9 1
+success 21 0 4
+success 21 1 5
+success 21 2 2
+success 21 3 6
+success 21 4 3
+success 21 5 7
+success 21 6 2
+21 14 -1 7 7 23 24
+success 21 8 0
+success 21 9 1
+success 22 0 4
+success 22 1 5
+22 18 -1 2 2 22 22
+success 22 3 6
+success 22 4 3
+success 22 5 7
+success 22 6 2
+success 22 7 8
+success 22 8 0
+success 22 9 1
+success 23 0 4
+success 23 1 5
+success 23 2 3
+success 23 3 6
+23 6 -1 3 4 20 21
+success 23 5 7
+success 23 6 2
+success 23 7 8
+success 23 8 0
+success 23 9 1
+success 24 0 4
+success 24 1 5
+success 24 2 3
+success 24 3 6
+24 5 -1 1 4 24 24
+success 24 5 7
+success 24 6 2
+success 24 7 8
+success 24 8 0
+success 24 9 1
+success 25 0 4
+success 25 1 5
+success 25 2 3
+success 25 3 6
+success 25 4 2
+success 25 5 7
+25 18 -1 2 6 22 23
+success 25 7 8
+success 25 8 0
+success 25 9 1
+success 26 0 4
+success 26 1 5
+success 26 2 3
+success 26 3 6
+success 26 4 2
+success 26 5 7
+success 26 6 3
+success 26 7 8
+success 26 8 0
+success 26 9 1
+success 27 0 4
+success 27 1 5
+27 18 -1 3 2 21 21
+success 27 3 6
+success 27 4 2
+success 27 5 7
+success 27 6 3
+success 27 7 8
+success 27 8 0
+success 27 9 1
+success 28 0 4
+success 28 1 5
+28 17 -1 4 2 20 21
+success 28 3 6
+success 28 4 2
+success 28 5 7
+success 28 6 3
+success 28 7 8
+success 28 8 0
+success 28 9 1
+success 29 0 4
+success 29 1 5
+success 29 2 0
+success 29 3 6
+success 29 4 2
+success 29 5 7
+success 29 6 3
+success 29 7 8
+29 15 -1 0 8 25 25
+success 29 9 1
+success 30 0 4
+success 30 1 5
+success 30 2 0
+success 30 3 6
+success 30 4 2
+success 30 5 7
+success 30 6 3
+success 30 7 8
+30 15 -1 1 8 24 24
+success 30 9 1
+success 31 0 4
+success 31 1 5
+success 31 2 0
+success 31 3 6
+success 31 4 2
+success 31 5 7
+success 31 6 3
+success 31 7 8
+31 15 -1 2 8 22 23
+success 31 9 1
+success 32 0 4
+success 32 1 5
+success 32 2 0
+success 32 3 6
+success 32 4 2
+success 32 5 7
+success 32 6 3
+success 32 7 8
+32 15 -1 3 8 21 20
+success 32 9 1
+success 33 0 4
+success 33 1 5
+success 33 2 0
+success 33 3 6
+success 33 4 2
+success 33 5 7
+success 33 6 3
+success 33 7 8
+33 15 -1 4 8 20 21
+success 33 9 1
+success 34 0 4
+success 34 1 5
+success 34 2 0
+success 34 3 6
+success 34 4 2
+success 34 5 7
+success 34 6 3
+success 34 7 8
+success 34 8 2
+success 34 9 1
+success 35 0 4
+success 35 1 5
+success 35 2 0
+success 35 3 6
+35 5 -1 2 4 23 23
+success 35 5 7
+success 35 6 3
+success 35 7 8
+success 35 8 2
+success 35 9 1
+success 36 0 4
+success 36 1 5
+success 36 2 0
+success 36 3 6
+success 36 4 3
+success 36 5 7
+36 18 -1 3 6 21 22
+success 36 7 8
+success 36 8 2
+success 36 9 1
+success 37 0 4
+success 37 1 5
+success 37 2 0
+success 37 3 6
+success 37 4 3
+success 37 5 7
+37 18 -1 4 6 20 21
+success 37 7 8
+success 37 8 2
+success 37 9 1
+success 38 0 4
+success 38 1 5
+success 38 2 0
+success 38 3 6
+success 38 4 3
+success 38 5 7
+38 17 -1 0 6 25 26
+success 38 7 8
+success 38 8 2
+success 38 9 1
+success 39 0 4
+success 39 1 5
+success 39 2 0
+success 39 3 6
+success 39 4 3
+success 39 5 7
+success 39 6 2
+success 39 7 8
+39 14 -1 2 8 23 24
+success 39 9 1
+success 40 0 4
+success 40 1 5
+success 40 2 0
+success 40 3 6
+success 40 4 3
+success 40 5 7
+success 40 6 2
+success 40 7 8
+success 40 8 4
+success 40 9 1
+41 21 -1 4 0 21 21
+success 41 1 5
+success 41 2 0
+success 41 3 6
+success 41 4 3
+success 41 5 7
+success 41 6 2
+success 41 7 8
+success 41 8 4
+success 41 9 1
+42 20 -1 3 0 21 20
+success 42 1 5
+success 42 2 0
+success 42 3 6
+success 42 4 3
+success 42 5 7
+success 42 6 2
+success 42 7 8
+success 42 8 4
+success 42 9 1
+43 19 -1 2 0 23 19
+success 43 1 5
+success 43 2 0
+success 43 3 6
+success 43 4 3
+success 43 5 7
+success 43 6 2
+success 43 7 8
+success 43 8 4
+success 43 9 1
+success 44 0 4
+success 44 1 5
+success 44 2 0
+success 44 3 6
+success 44 4 3
+success 44 5 7
+success 44 6 2
+success 44 7 8
+44 14 -1 4 8 22 22
+success 44 9 1
+success 45 0 4
+success 45 1 5
+success 45 2 0
+success 45 3 6
+success 45 4 3
+success 45 5 7
+success 45 6 2
+success 45 7 8
+45 14 -1 6 8 22 23
+success 45 9 1
+success 46 0 4
+success 46 1 5
+success 46 2 0
+success 46 3 6
+success 46 4 3
+success 46 5 7
+success 46 6 2
+success 46 7 8
+success 46 8 0
+success 46 9 1
+success 47 0 4
+success 47 1 5
+47 16 -1 0 2 26 26
+success 47 3 6
+success 47 4 3
+success 47 5 7
+success 47 6 2
+success 47 7 8
+success 47 8 0
+success 47 9 1
+success 48 0 4
+success 48 1 5
+success 48 2 2
+success 48 3 6
+success 48 4 3
+success 48 5 7
+48 17 -1 2 6 23 24
+success 48 7 8
+success 48 8 0
+success 48 9 1
+success 49 0 4
+success 49 1 5
+success 49 2 2
+success 49 3 6
+success 49 4 3
+success 49 5 7
+success 49 6 3
+success 49 7 8
+success 49 8 0
+success 49 9 1
+success 50 0 4
+success 50 1 5
+success 50 2 2
+success 50 3 6
+50 5 -1 3 4 22 22
+success 50 5 7
+success 50 6 3
+success 50 7 8
+success 50 8 0
+success 50 9 1
+success 51 0 4
+success 51 1 5
+success 51 2 2
+success 51 3 6
+51 5 -1 4 4 22 21
+success 51 5 7
+success 51 6 3
+success 51 7 8
+success 51 8 0
+success 51 9 1
+success 52 0 4
+success 52 1 5
+success 52 2 2
+success 52 3 6
+52 4 -1 0 4 26 26
+success 52 5 7
+success 52 6 3
+success 52 7 8
+success 52 8 0
+success 52 9 1
+success 53 0 4
+success 53 1 5
+success 53 2 2
+success 53 3 6
+success 53 4 1
+success 53 5 7
+success 53 6 3
+success 53 7 8
+success 53 8 0
+53 18 -1 1 9 25 25
+success 54 0 4
+success 54 1 5
+success 54 2 2
+success 54 3 6
+success 54 4 1
+success 54 5 7
+success 54 6 3
+success 54 7 8
+success 54 8 0
+54 18 -1 3 9 22 23
+success 55 0 4
+success 55 1 5
+success 55 2 2
+success 55 3 6
+success 55 4 1
+success 55 5 7
+success 55 6 3
+success 55 7 8
+success 55 8 0
+55 18 -1 4 9 22 21
+success 56 0 4
+success 56 1 5
+success 56 2 2
+success 56 3 6
+success 56 4 1
+success 56 5 7
+success 56 6 3
+success 56 7 8
+success 56 8 0
+success 56 9 9
+165
+5 6 3 7 2 8 4 9 1 10 
+26 25 23 22 22 21 22 23 24 25 
+Time: 0.001s
+success 1 0 1
+1 90000 -1 1 1 150000 200000
+1 70000 -1 1 2 150000 190000
+success 2 0 1
+success 2 1 0
+2 30000 -1 0 2 180000 0
+success 3 0 1
+success 3 1 0
+success 3 2 1
+4 110000 -1 1 0 190000 210000
+success 4 1 0
+success 4 2 1
+success 5 0 0
+5 40000 -1 0 1 180000 200000
+success 5 2 1
+success 6 0 0
+success 6 1 1
+6 30000 -1 1 2 200000 190001
+success 7 0 0
+success 7 1 1
+success 7 2 0
+8 50000 -1 0 0 180001 220000
+success 8 1 1
+success 8 2 0
+success 9 0 1
+9 40000 -1 1 1 210000 220000
+success 9 2 0
+success 10 0 1
+success 10 1 0
+10 29999 -1 0 2 200000 190001
+success 11 0 1
+success 11 1 0
+11 19999 -1 1 2 210000 210001
+success 12 0 1
+success 12 1 0
+success 12 2 0
+success 13 0 1
+13 20000 -1 0 1 200001 0
+success 13 2 0
+success 14 0 1
+success 14 1 1
+success 14 2 0
+15 50000 -1 1 0 220000 250000
+success 15 1 1
+success 15 2 0
+success 16 0 0
+success 16 1 1
+16 9999 -1 0 2 220000 0
+success 17 0 0
+success 17 1 1
+17 9999 -1 1 2 220000 0
+success 18 0 0
+success 18 1 1
+success 18 2 1
+success 19 0 0
+19 20000 -1 1 1 220001 220002
+success 19 2 1
+success 20 0 0
+success 20 1 2
+success 20 2 1
+140000
+1 3 2 
+220000 220001 190000 
+Time: 0s
+success 1 0 4
+success 1 1 0
+1 250000 -1 0 2 160000 180000
+1 40000 -1 0 3 160000 0
+1 130000 -1 0 4 160000 180000
+1 170000 -1 0 5 160000 0
+1 260000 -1 0 6 160000 180000
+1 140000 -1 0 7 160000 0
+1 230000 -1 0 8 160000 180000
+success 1 9 1
+success 2 0 4
+success 2 1 0
+success 2 2 0
+success 2 3 1
+2 110000 -1 0 4 180000 200000
+2 170000 -1 1 5 170000 170001
+2 240000 -1 0 6 180000 200000
+2 140000 -1 1 7 170000 170001
+2 210000 -1 0 8 180000 200000
+2 250000 -1 1 9 170000 210000
+success 3 0 4
+3 160000 -1 0 1 180000 0
+success 3 2 0
+success 3 3 1
+3 110000 -1 1 4 170000 190000
+success 3 5 2
+3 240000 -1 1 6 170000 190000
+3 140000 -1 2 7 180000 180001
+3 210000 -1 1 8 170000 190000
+3 210000 -1 0 9 180000 190000
+success 4 0 4
+success 4 1 1
+success 4 2 0
+4 40000 -1 1 3 170000 170001
+success 4 4 0
+success 4 5 2
+4 220000 -1 0 6 200000 220000
+success 4 7 3
+4 190000 -1 0 8 200000 240000
+success 4 9 1
+success 5 0 4
+5 160000 -1 1 1 210000 190001
+5 230000 -1 0 2 200000 200000
+success 5 3 2
+success 5 4 0
+5 170000 -1 2 5 180000 180001
+5 220000 -1 1 6 210000 210000
+success 5 7 3
+5 190000 -1 1 8 210000 230000
+success 5 9 1
+success 6 0 4
+success 6 1 2
+6 230000 -1 1 2 210000 190000
+6 40000 -1 2 3 180000 180001
+success 6 4 0
+success 6 5 3
+6 220000 -1 2 6 180000 200000
+6 140000 -1 3 7 190000 190001
+6 190000 -1 2 8 180000 220000
+success 6 9 1
+success 7 0 4
+success 7 1 2
+7 210000 -1 2 2 180000 180001
+success 7 3 3
+success 7 4 0
+7 170000 -1 3 5 190000 190001
+success 7 6 0
+7 140000 -1 4 7 200000 200001
+success 7 8 0
+success 7 9 1
+success 8 0 4
+success 8 1 2
+8 209999 -1 0 2 240000 220000
+success 8 3 3
+8 90000 -1 0 4 240000 220000
+8 170000 -1 4 5 200000 200001
+8 200000 -1 0 6 240000 220001
+success 8 7 5
+success 8 8 0
+success 8 9 1
+success 9 0 4
+success 9 1 2
+success 9 2 2
+success 9 3 3
+9 90000 -1 1 4 210000 210000
+success 9 5 5
+success 9 6 2
+9 140000 -1 5 7 210000 210001
+success 9 8 0
+success 9 9 1
+success 10 0 4
+10 160000 -1 2 1 200000 200001
+10 209999 -1 2 2 200000 200000
+success 10 3 3
+10 90000 -1 2 4 200000 200000
+success 10 5 5
+success 10 6 2
+success 10 7 6
+success 10 8 0
+success 10 9 1
+success 11 0 4
+success 11 1 3
+11 190000 -1 3 2 190000 190001
+11 40000 -1 3 3 190000 190001
+11 70000 -1 3 4 190000 190001
+success 11 5 5
+success 11 6 2
+success 11 7 6
+success 11 8 0
+success 11 9 1
+success 12 0 4
+success 12 1 3
+success 12 2 1
+12 40000 -1 4 3 200000 200001
+12 69999 -1 1 4 210001 230000
+success 12 5 5
+success 12 6 2
+success 12 7 6
+success 12 8 0
+12 210000 -1 1 9 210001 240000
+success 13 0 4
+success 13 1 3
+success 13 2 1
+success 13 3 5
+success 13 4 2
+13 170000 -1 5 5 210000 210001
+13 200000 -1 2 6 200001 200001
+success 13 7 6
+success 13 8 0
+13 210000 -1 2 9 200001 210000
+success 14 0 4
+success 14 1 3
+success 14 2 1
+success 14 3 5
+success 14 4 2
+success 14 5 6
+14 200000 -1 3 6 190000 190001
+14 140000 -1 6 7 220000 220001
+success 14 8 0
+14 210000 -1 3 9 190000 220000
+success 15 0 4
+success 15 1 3
+success 15 2 1
+success 15 3 5
+success 15 4 2
+success 15 5 6
+15 199999 -1 1 6 210001 210002
+success 15 7 7
+success 15 8 0
+15 180000 -1 0 9 240000 200000
+success 16 0 4
+success 16 1 3
+success 16 2 1
+success 16 3 5
+success 16 4 2
+success 16 5 6
+success 16 6 3
+success 16 7 7
+success 16 8 0
+success 16 9 1
+success 17 0 4
+17 160000 -1 3 1 190001 210001
+17 189999 -1 1 2 240000 230000
+success 17 3 5
+success 17 4 2
+success 17 5 6
+success 17 6 3
+success 17 7 7
+success 17 8 0
+success 17 9 1
+success 18 0 4
+18 160000 -1 4 1 200000 220001
+success 18 2 2
+success 18 3 5
+18 69999 -1 2 4 200001 220000
+success 18 5 6
+success 18 6 3
+success 18 7 7
+success 18 8 0
+success 18 9 1
+success 19 0 4
+success 19 1 5
+success 19 2 2
+19 40000 -1 5 3 210000 210001
+success 19 4 3
+success 19 5 6
+19 199999 -1 3 6 190001 190002
+success 19 7 7
+success 19 8 0
+success 19 9 1
+success 20 0 4
+success 20 1 5
+success 20 2 2
+success 20 3 6
+success 20 4 3
+20 170000 -1 6 5 220000 220001
+20 199998 -1 1 6 240000 230000
+success 20 7 7
+success 20 8 0
+success 20 9 1
+success 21 0 4
+success 21 1 5
+success 21 2 2
+success 21 3 6
+success 21 4 3
+success 21 5 7
+success 21 6 2
+21 140000 -1 7 7 230000 230001
+success 21 8 0
+success 21 9 1
+success 22 0 4
+success 22 1 5
+22 189999 -1 2 2 200002 220000
+success 22 3 6
+success 22 4 3
+success 22 5 7
+success 22 6 2
+success 22 7 8
+success 22 8 0
+success 22 9 1
+success 23 0 4
+success 23 1 5
+success 23 2 3
+success 23 3 6
+23 69999 -1 3 4 190001 210000
+success 23 5 7
+success 23 6 2
+success 23 7 8
+success 23 8 0
+success 23 9 1
+success 24 0 4
+success 24 1 5
+success 24 2 3
+success 24 3 6
+24 50000 -1 1 4 240000 230001
+success 24 5 7
+success 24 6 2
+success 24 7 8
+success 24 8 0
+success 24 9 1
+success 25 0 4
+success 25 1 5
+success 25 2 3
+success 25 3 6
+success 25 4 2
+success 25 5 7
+25 199998 -1 2 6 220000 220000
+success 25 7 8
+success 25 8 0
+success 25 9 1
+success 26 0 4
+success 26 1 5
+success 26 2 3
+success 26 3 6
+success 26 4 2
+success 26 5 7
+success 26 6 3
+success 26 7 8
+success 26 8 0
+success 26 9 1
+success 27 0 4
+success 27 1 5
+27 189999 -1 3 2 190002 210000
+success 27 3 6
+success 27 4 2
+success 27 5 7
+success 27 6 3
+success 27 7 8
+success 27 8 0
+success 27 9 1
+success 28 0 4
+success 28 1 5
+success 28 2 2
+success 28 3 6
+28 50000 -1 2 4 220000 220001
+success 28 5 7
+success 28 6 3
+success 28 7 8
+success 28 8 0
+success 28 9 1
+success 29 0 4
+success 29 1 5
+success 29 2 2
+success 29 3 6
+success 29 4 3
+success 29 5 7
+29 199998 -1 3 6 210000 210000
+success 29 7 8
+success 29 8 0
+success 29 9 1
+success 30 0 4
+success 30 1 5
+success 30 2 2
+success 30 3 6
+success 30 4 3
+success 30 5 7
+30 180000 -1 4 6 200000 200001
+success 30 7 8
+success 30 8 0
+success 30 9 1
+success 31 0 4
+success 31 1 5
+success 31 2 2
+success 31 3 6
+success 31 4 3
+success 31 5 7
+success 31 6 0
+success 31 7 8
+31 150000 -1 0 8 240001 250000
+success 31 9 1
+success 32 0 4
+success 32 1 5
+success 32 2 2
+success 32 3 6
+success 32 4 3
+success 32 5 7
+success 32 6 0
+success 32 7 8
+32 150000 -1 1 8 240000 240000
+success 32 9 1
+success 33 0 4
+success 33 1 5
+success 33 2 2
+success 33 3 6
+success 33 4 3
+success 33 5 7
+success 33 6 0
+success 33 7 8
+33 150000 -1 2 8 220000 230000
+success 33 9 1
+success 34 0 4
+success 34 1 5
+success 34 2 2
+success 34 3 6
+success 34 4 3
+success 34 5 7
+success 34 6 0
+success 34 7 8
+34 150000 -1 3 8 210000 200000
+success 34 9 1
+success 35 0 4
+success 35 1 5
+success 35 2 2
+success 35 3 6
+success 35 4 3
+success 35 5 7
+success 35 6 0
+success 35 7 8
+35 150000 -1 4 8 200000 210000
+success 35 9 1
+success 36 0 4
+success 36 1 5
+success 36 2 2
+success 36 3 6
+success 36 4 3
+success 36 5 7
+success 36 6 0
+success 36 7 8
+success 36 8 0
+success 36 9 1
+success 37 0 4
+success 37 1 5
+success 37 2 2
+success 37 3 6
+success 37 4 3
+success 37 5 7
+37 179999 -1 0 6 250000 250001
+success 37 7 8
+success 37 8 0
+success 37 9 1
+success 38 0 4
+success 38 1 5
+success 38 2 2
+success 38 3 6
+success 38 4 3
+success 38 5 7
+success 38 6 2
+success 38 7 8
+success 38 8 0
+success 38 9 1
+success 39 0 4
+success 39 1 5
+39 170000 -1 2 2 220001 220001
+success 39 3 6
+success 39 4 3
+success 39 5 7
+success 39 6 2
+success 39 7 8
+success 39 8 0
+success 39 9 1
+success 40 0 4
+success 40 1 5
+success 40 2 3
+success 40 3 6
+40 50000 -1 3 4 210000 210001
+success 40 5 7
+success 40 6 2
+success 40 7 8
+success 40 8 0
+success 40 9 1
+success 41 0 4
+success 41 1 5
+success 41 2 3
+success 41 3 6
+41 50000 -1 4 4 200000 200001
+success 41 5 7
+success 41 6 2
+success 41 7 8
+success 41 8 0
+success 41 9 1
+success 42 0 4
+success 42 1 5
+success 42 2 3
+success 42 3 6
+42 49999 -1 0 4 250000 250001
+success 42 5 7
+success 42 6 2
+success 42 7 8
+success 42 8 0
+success 42 9 1
+success 43 0 4
+success 43 1 5
+success 43 2 3
+success 43 3 6
+success 43 4 2
+success 43 5 7
+43 179999 -1 2 6 220001 230001
+success 43 7 8
+success 43 8 0
+success 43 9 1
+success 44 0 4
+success 44 1 5
+success 44 2 3
+success 44 3 6
+success 44 4 2
+success 44 5 7
+success 44 6 3
+success 44 7 8
+success 44 8 0
+success 44 9 1
+success 45 0 4
+success 45 1 5
+45 170000 -1 3 2 210001 210001
+success 45 3 6
+success 45 4 2
+success 45 5 7
+success 45 6 3
+success 45 7 8
+success 45 8 0
+success 45 9 1
+success 46 0 4
+success 46 1 5
+46 170000 -1 4 2 200000 200001
+success 46 3 6
+success 46 4 2
+success 46 5 7
+success 46 6 3
+success 46 7 8
+success 46 8 0
+success 46 9 1
+success 47 0 4
+success 47 1 5
+47 169999 -1 0 2 250000 240002
+success 47 3 6
+success 47 4 2
+success 47 5 7
+success 47 6 3
+success 47 7 8
+success 47 8 0
+success 47 9 1
+success 48 0 4
+success 48 1 5
+success 48 2 4
+success 48 3 6
+success 48 4 2
+success 48 5 7
+success 48 6 3
+success 48 7 8
+success 48 8 0
+success 48 9 1
+49 210000 -1 4 0 200001 210000
+success 49 1 5
+success 49 2 4
+success 49 3 6
+success 49 4 2
+success 49 5 7
+success 49 6 3
+success 49 7 8
+success 49 8 0
+success 49 9 1
+50 200000 -1 3 0 210001 200000
+success 50 1 5
+success 50 2 4
+success 50 3 6
+success 50 4 2
+success 50 5 7
+success 50 6 3
+success 50 7 8
+success 50 8 0
+success 50 9 1
+success 51 0 4
+success 51 1 5
+51 169999 -1 4 2 210000 200002
+success 51 3 6
+success 51 4 2
+success 51 5 7
+success 51 6 3
+success 51 7 8
+success 51 8 0
+success 51 9 1
+success 52 0 4
+success 52 1 5
+success 52 2 2
+success 52 3 6
+52 49999 -1 2 4 220002 230001
+success 52 5 7
+success 52 6 3
+success 52 7 8
+success 52 8 0
+success 52 9 1
+success 53 0 4
+success 53 1 5
+success 53 2 2
+success 53 3 6
+success 53 4 3
+success 53 5 7
+53 179999 -1 3 6 210001 220001
+success 53 7 8
+success 53 8 0
+success 53 9 1
+success 54 0 4
+success 54 1 5
+success 54 2 2
+success 54 3 6
+success 54 4 3
+success 54 5 7
+54 179999 -1 4 6 210000 210001
+success 54 7 8
+success 54 8 0
+success 54 9 1
+success 55 0 4
+success 55 1 5
+success 55 2 2
+success 55 3 6
+success 55 4 3
+success 55 5 7
+success 55 6 0
+success 55 7 8
+55 140000 -1 0 8 250001 250001
+success 55 9 1
+success 56 0 4
+success 56 1 5
+success 56 2 2
+success 56 3 6
+success 56 4 3
+success 56 5 7
+success 56 6 0
+success 56 7 8
+success 56 8 2
+success 56 9 1
+success 57 0 4
+success 57 1 5
+57 169998 -1 2 2 230000 230001
+success 57 3 6
+success 57 4 3
+success 57 5 7
+success 57 6 0
+success 57 7 8
+success 57 8 2
+success 57 9 1
+success 58 0 4
+success 58 1 5
+success 58 2 3
+success 58 3 6
+58 49999 -1 3 4 210002 220001
+success 58 5 7
+success 58 6 0
+success 58 7 8
+success 58 8 2
+success 58 9 1
+success 59 0 4
+success 59 1 5
+success 59 2 3
+success 59 3 6
+59 49999 -1 4 4 210000 210001
+success 59 5 7
+success 59 6 0
+success 59 7 8
+success 59 8 2
+success 59 9 1
+success 60 0 4
+success 60 1 5
+success 60 2 3
+success 60 3 6
+success 60 4 0
+success 60 5 7
+60 169999 -1 0 6 250001 260000
+success 60 7 8
+success 60 8 2
+success 60 9 1
+success 61 0 4
+success 61 1 5
+success 61 2 3
+success 61 3 6
+success 61 4 0
+success 61 5 7
+success 61 6 1
+success 61 7 8
+success 61 8 2
+61 180000 -1 1 9 240001 250000
+success 62 0 4
+success 62 1 5
+success 62 2 3
+success 62 3 6
+success 62 4 0
+success 62 5 7
+success 62 6 1
+success 62 7 8
+success 62 8 2
+62 180000 -1 2 9 230000 220000
+success 63 0 4
+success 63 1 5
+success 63 2 3
+success 63 3 6
+success 63 4 0
+success 63 5 7
+success 63 6 1
+success 63 7 8
+success 63 8 2
+success 63 9 3
+success 64 0 4
+success 64 1 5
+64 169998 -1 3 2 220000 220001
+success 64 3 6
+success 64 4 0
+success 64 5 7
+success 64 6 1
+success 64 7 8
+success 64 8 2
+success 64 9 3
+success 65 0 4
+success 65 1 5
+success 65 2 0
+success 65 3 6
+65 39999 -1 0 4 250001 260000
+success 65 5 7
+success 65 6 1
+success 65 7 8
+success 65 8 2
+success 65 9 3
+success 66 0 4
+success 66 1 5
+success 66 2 0
+success 66 3 6
+success 66 4 1
+success 66 5 7
+66 169999 -1 1 6 240001 250000
+success 66 7 8
+success 66 8 2
+success 66 9 3
+success 67 0 4
+success 67 1 5
+success 67 2 0
+success 67 3 6
+success 67 4 1
+success 67 5 7
+success 67 6 2
+success 67 7 8
+67 140000 -1 2 8 230001 230001
+success 67 9 3
+success 68 0 4
+success 68 1 5
+success 68 2 0
+success 68 3 6
+success 68 4 1
+success 68 5 7
+success 68 6 2
+success 68 7 8
+68 140000 -1 4 8 210000 210001
+success 68 9 3
+success 69 0 4
+success 69 1 5
+success 69 2 0
+success 69 3 6
+success 69 4 1
+success 69 5 7
+success 69 6 2
+success 69 7 8
+69 140000 -1 6 8 220000 220001
+success 69 9 3
+success 70 0 4
+success 70 1 5
+success 70 2 0
+success 70 3 6
+success 70 4 1
+success 70 5 7
+success 70 6 2
+success 70 7 8
+70 139999 -1 1 8 240001 240002
+success 70 9 3
+success 71 0 4
+success 71 1 5
+success 71 2 0
+success 71 3 6
+success 71 4 1
+success 71 5 7
+success 71 6 2
+success 71 7 8
+success 71 8 4
+success 71 9 3
+72 200000 -1 4 0 210001 220000
+success 72 1 5
+success 72 2 0
+success 72 3 6
+success 72 4 1
+success 72 5 7
+success 72 6 2
+success 72 7 8
+success 72 8 4
+success 72 9 3
+73 190000 -1 2 0 230001 190000
+success 73 1 5
+success 73 2 0
+success 73 3 6
+success 73 4 1
+success 73 5 7
+success 73 6 2
+success 73 7 8
+success 73 8 4
+success 73 9 3
+success 74 0 4
+success 74 1 5
+success 74 2 0
+success 74 3 6
+success 74 4 1
+success 74 5 7
+success 74 6 2
+success 74 7 8
+74 139999 -1 4 8 220000 210002
+success 74 9 3
+success 75 0 4
+success 75 1 5
+success 75 2 0
+success 75 3 6
+success 75 4 1
+success 75 5 7
+success 75 6 2
+success 75 7 8
+success 75 8 6
+success 75 9 3
+success 76 0 4
+success 76 1 5
+success 76 2 0
+76 40000 -1 6 3 220001 220001
+success 76 4 1
+success 76 5 7
+success 76 6 2
+success 76 7 8
+success 76 8 6
+success 76 9 3
+success 77 0 4
+success 77 1 5
+success 77 2 0
+success 77 3 7
+success 77 4 1
+77 170000 -1 7 5 230000 230001
+success 77 6 2
+success 77 7 8
+success 77 8 6
+success 77 9 3
+success 78 0 4
+success 78 1 5
+success 78 2 0
+success 78 3 7
+success 78 4 1
+success 78 5 8
+success 78 6 2
+78 140000 -1 8 7 240000 240001
+success 78 8 6
+success 78 9 3
+success 79 0 4
+success 79 1 5
+success 79 2 0
+success 79 3 7
+success 79 4 1
+success 79 5 8
+success 79 6 2
+success 79 7 9
+success 79 8 6
+success 79 9 3
+1650000
+5 6 1 8 2 9 3 10 7 4 
+250001 240001 230001 220000 220000 210000 220001 230000 240000 250000 
+Time: 0s
