@@ -8,6 +8,7 @@ int n, m, Max;
 vector<int>match;
 vector<int>best_match;
 vector<int>use;
+LL tc = 0;
 void init(){
 	Max = -1;
 	match.clear();
@@ -15,6 +16,7 @@ void init(){
 	match.resize(m);
 	use.resize(n);
 	best_match.clear();
+	tc = 0;
 }
 
 void input(){
@@ -41,13 +43,17 @@ void input(){
 int total(){
 	int i, re=0;
 	for(i=0;i<match.size();i++){
-		re += buyer[i][match[i]]-seller[match[i]];
+		if(match[i]!=-1)
+			re += buyer[i][match[i]]-seller[match[i]];
 	}
 	return re;
 }
 
 void DFS(int pos){
 	if(pos==m){
+		tc++;
+//		for(int j=0;j<match.size();j++)cout << match[j]+1 << " ";
+//		cout << '\n';
 		int tmp = total();
 		if(Max < tmp){
 			Max = tmp;
@@ -56,6 +62,8 @@ void DFS(int pos){
 		return;	
 	}
 	int i;
+	match[pos] = -1;
+	DFS(pos+1);
 	for(i=0;i<n;i++){
 		if(!use[i]){
 			use[i] = 1;
@@ -75,6 +83,7 @@ void solve(){
 		init();	
 		DFS(0);
 		cout << Max << '\n';
+//		cout << tc << '\n';
 		int j;
 		for(j=0;j<best_match.size();j++)cout << best_match[j]+1 << " ";
 		cout << '\n';
@@ -85,10 +94,14 @@ void solve(){
 }
 
 int main(){
-//	ios_base::sync_with_stdio(0);
-//	cin.tie(0);
-	freopen("input.txt","r",stdin);
-	freopen("BF_output.txt","w",stdout);
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	string input = "testcase_0.txt";
+	string output = "BF_" + input;
+	input = "./testcase/" + input;
+	output = "./testcase/" + output;
+	freopen(input.c_str(),"r",stdin);
+	freopen(output.c_str(),"w",stdout);
 	solve();
 }
 

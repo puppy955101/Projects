@@ -10,91 +10,43 @@ vector<int>match;
 vector<int>final_price;
 vector<int>best_match;
 vector<int>use;
-void init(){
-	Max = -1;
-	match.clear();
-	use.clear();
-	buyer_price.clear();
-	final_price.clear();
-	buyer_price.resize(m);
-	for(int i=0;i<m;i++)buyer_price[i].resize(n);
-	final_price.resize(n);
-	match.resize(m);
-	for(int i=0;i<m;i++)match[i] = -1;
-	use.resize(n);
-	for(int i=0;i<n;i++)use[i] = -1;
-	best_match.clear();
+mt19937 seed(2020);
+int randint(int lb, int ub) { // [lb, ub]
+	return uniform_int_distribution<int>(lb,ub)(seed);
 }
 
 void input(){
-	cin >> n;
+//	cin >> n;
+	n = randint(2,10);
 	cout << n << '\n';
 	int k = 10000;
 	seller.clear();
 	int i, x, j;
 	for(i=0;i<n;i++){
-		cin >> x;
-		cout << x*k << " \n"[i==n-1];
+//		cin >> x;
+		x = randint(10,100);
+		cout << x << " \n"[i==n-1];
 		seller.pb(x); 
 	}
 	buyer.clear();
-	cin >> m;
+	m = randint(2,10);
+	if(n==m)m++;
 	cout << m << '\n';
 	for(i=0;i<m;i++){
 		vector<int>tmp;
 		tmp.clear();
 		buyer.pb(tmp);
 		for(j=0;j<n;j++){
-			cin >> x;
-			cout << x*k << " \n"[j==n-1];
+			x = randint(10,100);
+			cout << x << " \n"[j==n-1];
 			buyer[i].pb(x);	
 		}
 	}
 }
 
-void GAA(){
-	int ok = 0, i, j, tc=0;
-	for(i=0;i<m;i++)
-		for(j=0;j<n;j++){
-			buyer_price[i][j] = seller[j];	//buyer want to pay the price
-		}
-	while(!ok){
-//		tc++;
-//		if(tc>100)break;
-		for(i=0;i<m;i++){
-			int tmp = -100000, choice=0;
-			for(j=0;j<n;j++){
-				if(tmp < buyer[i][j]-buyer_price[i][j])
-					tmp = buyer[i][j]-buyer_price[i][j], choice = j;
-			}
-			if(final_price[choice] < buyer_price[i][choice]){
-				if(use[choice]!=-1)match[use[choice]] = -1;
-				match[i] = choice;
-				use[choice] = i;
-				final_price[choice] = buyer_price[i][choice];
-			}
-			else{
-				buyer_price[i][choice]++;	
-			}
-		}
-		for(i=0;i<n;i++)if(match[i]==-1)break;
-		if(i==n)ok = 1;
-//		for(j=0;j<match.size();j++)cout << match[j]+1 << " ";
-//		cout << '\n';
-//		for(j=0;j<final_price.size();j++)cout << final_price[j] << " ";
-//		cout << '\n';
-	}
-	Max = 0;
-	for(i=0;i<match.size();i++){
-		Max += buyer[i][match[i]]-seller[match[i]];
-	}
-	best_match = match;
-}
 void solve(){
 	int t, i;
-	clock_t start, end;
-	start = clock();
-	cin >> t;
+	t = 10;
 	cout << t << '\n';
 	for(i=0;i<t;i++){
 		input();
@@ -102,10 +54,10 @@ void solve(){
 }
 
 int main(){
-//	ios_base::sync_with_stdio(0);
-//	cin.tie(0);
-	freopen("origin.txt","r",stdin);
-	freopen("TMP.txt","w",stdout);
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+//	freopen("origin.txt","r",stdin);
+	freopen("./testcase/testcase_0.txt","w",stdout);
 	solve();
 }
 
