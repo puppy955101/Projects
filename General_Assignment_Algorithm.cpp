@@ -122,14 +122,17 @@ void solve(){
 }
 
 int main(){
-	ios_base::sync_with_stdio(0);
-	cin.tie(0);
-	string input = "testcase_0.txt";
-	string output = "GAA_" + input;
-	input = "./testcase/" + input;
-	output = "./testcase/" + output;
-	freopen(input.c_str(),"r",stdin);
-	freopen(output.c_str(),"w",stdout);
-	solve();
+//	ios_base::sync_with_stdio(0);
+//	cin.tie(0);
+	for(int i=0;i<5;i++){
+		string input = "testcase_0.txt";
+		input[9] = '0'+i;
+		string output = "GAA_" + input;
+		input = "./testcase/" + input;
+		output = "./testcase/" + output;
+		freopen(input.c_str(),"r",stdin);
+		freopen(output.c_str(),"w",stdout);
+		solve();
+	}
 }
 

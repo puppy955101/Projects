@@ -1,0 +1,54 @@
+error: line 14
+BF_testcase_0.txt: 333
+GAA_testcase_0.txt: 332
+error: line 15
+BF_testcase_0.txt: 10 1 4 8 6 5 7 2 
+GAA_testcase_0.txt: 10 1 2 8 6 5 4 7 
+error: line 18
+BF_testcase_1.txt: 197
+HGAA_testcase_1.txt: 150
+error: line 19
+BF_testcase_1.txt: 3 0 0 4 0 0 2 0 1 0 
+HGAA_testcase_1.txt: 0 0 0 3 0 1 2 0 0 4 
+error: line 10
+BF_testcase_2.txt: 105
+HGAA_testcase_2.txt: 98
+error: line 11
+BF_testcase_2.txt: 0 0 0 2 3 0 1 0 0 
+HGAA_testcase_2.txt: 0 0 0 2 3 1 0 0 0 
+error: line 14
+BF_testcase_2.txt: 198
+HGAA_testcase_2.txt: 182
+error: line 15
+BF_testcase_2.txt: 0 0 3 0 4 2 0 0 1 0 
+HGAA_testcase_2.txt: 0 0 0 1 4 2 0 3 0 0 
+error: line 18
+BF_testcase_2.txt: 82
+HGAA_testcase_2.txt: 69
+error: line 19
+BF_testcase_2.txt: 3 0 1 2 0 
+HGAA_testcase_2.txt: 3 0 0 2 1 
+error: line 18
+BF_testcase_3.txt: 222
+HGAA_testcase_3.txt: 204
+error: line 19
+BF_testcase_3.txt: 0 2 0 5 3 1 0 4 
+HGAA_testcase_3.txt: 4 2 0 5 3 1 0 0 
+error: line 7
+BF_testcase_4.txt: 1 0 2 0 0 0 3 
+GAA_testcase_4.txt: 1 0 2 0 0 4 3 
+error: line 11
+BF_testcase_4.txt: 1 0 2 4 5 0 7 6 3 0 
+GAA_testcase_4.txt: 1 5 2 0 4 0 7 6 3 0 
+error: line 2
+BF_testcase_4.txt: 43
+HGAA_testcase_4.txt: 19
+error: line 3
+BF_testcase_4.txt: 0 0 0 0 0 2 0 1 
+HGAA_testcase_4.txt: 0 1 0 2 0 0 0 0 
+error: line 10
+BF_testcase_4.txt: 280
+HGAA_testcase_4.txt: 273
+error: line 11
+BF_testcase_4.txt: 1 0 2 4 5 0 7 6 3 0 
+HGAA_testcase_4.txt: 1 5 2 0 4 3 0 6 0 7 

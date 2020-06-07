@@ -54,9 +54,15 @@ void solve(){
 }
 
 int main(){
-	ios_base::sync_with_stdio(0);
-	cin.tie(0);
-	freopen("./testcase/testcase_0.txt","w",stdout);
-	solve();
+//	ios_base::sync_with_stdio(0);
+//	cin.tie(0);
+	for(int i=0;i<5;i++){
+		string s;
+		s = "./testcase/testcase_";
+		s = s + char('0'+i);
+		s = s + ".txt";
+		freopen(s.c_str(),"w",stdout);
+		solve();
+	}
 }
 
