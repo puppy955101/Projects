@@ -46,7 +46,15 @@ void input(){
 		}
 	}
 }
-
+bool can_buy(LL i, LL choice){
+	if(match[i]==choice||final_price[choice] < buyer_price[i][choice]||(final_price[choice] == buyer_price[i][choice]&&i<use[choice]))
+		return 1;
+	return 0;
+}
+bool cmp(pair<LL,LL> a, pair<LL,LL> b){
+	if(a.first!=b.first)return a.first > b.first;
+	return a.second < b.second;	
+}
 void GAA(){
 	LL ok = 0, i, j, tc=0;
 	for(i=0;i<m;i++)
@@ -55,36 +63,41 @@ void GAA(){
 		}
 	while(!ok){
 		tc++;
-//		if(tc>100)break;
+		if(tc>10000)break;
 		for(i=0;i<m;i++){
 			LL tmp = -100000, choice=0;
+			vector<pair<LL,LL>> V;
+			V.clear();
 			for(j=0;j<n;j++){
-				if(tmp < buyer[i][j]-buyer_price[i][j])
-					tmp = buyer[i][j]-buyer_price[i][j], choice = j;
+				tmp = buyer[i][j]-buyer_price[i][j];
+				V.pb({tmp,j});
 			}
-			if(match[i]==choice||final_price[choice] < buyer_price[i][choice]||(final_price[choice] == buyer_price[i][choice]&&i<use[choice])){
-				if(use[choice]!=-1)match[use[choice]] = -1;
-				cout << "success ";
-				cout << tc << ' ' << i << ' ' << choice << '\n';
-				match[i] = choice;
-				use[choice] = i;
-				final_price[choice] = buyer_price[i][choice];
-			}
-			else{
-				cout << tc << ' ';
-				cout << tmp << ' ';
-				cout << match[i] << ' ';
-				cout << choice << ' ';
-				tmp = 0;
-				for(j=0;j<n;j++){
-					if(buyer[i][j]-buyer_price[i][j]!=buyer[i][choice]-buyer_price[i][choice]&&tmp < buyer[i][j]-buyer_price[i][j])
-						tmp = buyer[i][j]-buyer_price[i][j];
+			sort(V.begin(),V.end(),cmp);
+			for(j=0;j<V.size();j++){
+				choice = V[j].second;
+				if(can_buy(i,V[j].second)){
+					if(use[choice]!=-1)match[use[choice]] = -1;
+//					cout << "success ";
+//					cout << tc << ' ' << i << ' ' << choice << '\n';
+					match[i] = choice;
+					use[choice] = i;
+					final_price[choice] = buyer_price[i][choice];
+					break;
 				}
-				if(tmp==0)tmp = buyer[i][choice];
-				buyer_price[i][choice] = max(final_price[choice]+1,buyer[i][choice]-tmp);
-				cout << i << ' ';
-				cout << final_price[choice] << ' ';	
-				cout << buyer[i][choice]-tmp << '\n';
+				else{
+//					cout << tc << ' ';
+//					cout << tmp << ' ';
+//					cout << match[i] << ' ';
+//					cout << choice << ' ';
+					tmp = 0;
+					if(j+1<V.size())tmp = V[j+1].first;
+					if(tmp==0)tmp = buyer[i][choice];
+					buyer_price[i][choice] = max(final_price[choice]+1,buyer[i][choice]-tmp);
+//					cout << i << ' ';
+//					cout << final_price[choice] << ' ';	
+//					cout << buyer[i][choice]-tmp << '\n';
+					break;
+				}
 			}
 		}
 		for(i=0;i<n;i++)if(match[i]==-1)break;
