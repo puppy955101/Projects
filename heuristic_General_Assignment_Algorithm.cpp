@@ -117,10 +117,10 @@ void GAA(){
 				}
 			}
 		}
-		for(i=0;i<n;i++)if(use[i]==-1)break;
-		if(i==n)ok = 1;
-		for(i=0;i<m;i++)if(match[i]==-1)break;
-		if(i==m)ok = 1;
+//		for(i=0;i<n;i++)if(use[i]==-1)break;
+//		if(i==n)ok = 1;
+//		for(i=0;i<m;i++)if(match[i]==-1)break;
+//		if(i==m)ok = 1;
 //		for(j=0;j<match.size();j++)cout << match[j]+1 << " ";
 //		cout << '\n';
 //		for(j=0;j<final_price.size();j++)cout << final_price[j] << " ";
