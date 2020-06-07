@@ -47,6 +47,7 @@ void input(){
 	}
 }
 bool can_buy(LL i, LL choice){
+	if(choice==-1)return 0;
 	if(match[i]==choice||final_price[choice] < buyer_price[i][choice]||(final_price[choice] == buyer_price[i][choice]&&i<use[choice]))
 		return 1;
 	return 0;
@@ -63,11 +64,13 @@ void GAA(){
 		}
 	while(!ok){
 		tc++;
-		if(tc>10000)break;
+//		if(tc>100000)cout << "success ";
+//		if(tc>100000)break;
 		for(i=0;i<m;i++){
-			LL tmp = -100000, choice=0;
+			LL tmp = -100000, choice=-1;
 			vector<pair<LL,LL>> V;
 			V.clear();
+			V.pb({0,-1});
 			for(j=0;j<n;j++){
 				tmp = buyer[i][j]-buyer_price[i][j];
 				V.pb({tmp,j});
@@ -76,15 +79,22 @@ void GAA(){
 			for(j=0;j<V.size();j++){
 				choice = V[j].second;
 				if(can_buy(i,V[j].second)){
+					if(match[i]==choice&&i==0)ok = 1;
+					if(match[i]==choice)ok*=1;
+					else ok = 0;
 					if(use[choice]!=-1)match[use[choice]] = -1;
-//					cout << "success ";
-//					cout << tc << ' ' << i << ' ' << choice << '\n';
+//					if(tc>10000){
+//						cout << i << ' ' << ok << '\n';
+//						cout << "success ";
+//						cout << tc << ' ' << i << ' ' << choice << '\n';
+//						cout << j << ' ' << V[j].first << '\n';
+//					}
 					match[i] = choice;
 					use[choice] = i;
 					final_price[choice] = buyer_price[i][choice];
 					break;
 				}
-				else{
+				else if(choice!=-1){
 //					cout << tc << ' ';
 //					cout << tmp << ' ';
 //					cout << match[i] << ' ';
@@ -96,12 +106,21 @@ void GAA(){
 //					cout << i << ' ';
 //					cout << final_price[choice] << ' ';	
 //					cout << buyer[i][choice]-tmp << '\n';
+					ok = 0;
 					break;
+				}
+				else{
+					if(match[i]!=-1)use[match[i]] = -1;
+					match[i] = choice;
+					if(i==0)ok = 1;
+					break;	
 				}
 			}
 		}
-		for(i=0;i<n;i++)if(match[i]==-1)break;
+		for(i=0;i<n;i++)if(use[i]==-1)break;
 		if(i==n)ok = 1;
+		for(i=0;i<m;i++)if(match[i]==-1)break;
+		if(i==m)ok = 1;
 //		for(j=0;j<match.size();j++)cout << match[j]+1 << " ";
 //		cout << '\n';
 //		for(j=0;j<final_price.size();j++)cout << final_price[j] << " ";
