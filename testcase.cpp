@@ -56,7 +56,6 @@ void solve(){
 int main(){
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);
-//	freopen("origin.txt","r",stdin);
 	freopen("./testcase/testcase_0.txt","w",stdout);
 	solve();
 }

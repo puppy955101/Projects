@@ -92,7 +92,7 @@ void GAA(){
 					tmp = 0;
 					if(j+1<V.size())tmp = V[j+1].first;
 					if(tmp==0)tmp = buyer[i][choice];
-					buyer_price[i][choice] = max(final_price[choice]+1,buyer[i][choice]-tmp);
+					buyer_price[i][choice] = max(final_price[choice]+1,buyer[i][choice]-tmp-1);
 //					cout << i << ' ';
 //					cout << final_price[choice] << ' ';	
 //					cout << buyer[i][choice]-tmp << '\n';
@@ -109,7 +109,8 @@ void GAA(){
 	}
 	Max = 0;
 	for(i=0;i<match.size();i++){
-		Max += buyer[i][match[i]]-seller[match[i]];
+		if(match[i]!=-1 && buyer[i][match[i]]-seller[match[i]]>0)
+			Max += buyer[i][match[i]]-seller[match[i]];
 	}
 	best_match = match;
 }
@@ -135,10 +136,16 @@ void solve(){
 }
 
 int main(){
-//	ios_base::sync_with_stdio(0);
-//	cin.tie(0);
-	freopen("input.txt","r",stdin);
-	freopen("HGAA_output.txt","w",stdout);
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	string input = "testcase_0.txt";
+	string output = "HGAA_" + input;
+	input = "./testcase/" + input;
+	output = "./testcase/" + output;
+	freopen(input.c_str(),"r",stdin);
+	freopen(output.c_str(),"w",stdout);
+//	freopen("input.txt","r",stdin);
+//	freopen("HGAA_output.txt","w",stdout);
 	solve();
 }
 

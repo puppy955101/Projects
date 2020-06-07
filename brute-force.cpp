@@ -2,12 +2,12 @@
 using namespace std;
 #define LL long long
 #define pb push_back
-vector<int>seller;
-vector<vector<int>>buyer;
-int n, m, Max;
-vector<int>match;
-vector<int>best_match;
-vector<int>use;
+vector<LL>seller;
+vector<vector<LL>>buyer;
+LL n, m, Max;
+vector<LL>match;
+vector<LL>best_match;
+vector<LL>use;
 LL tc = 0;
 void init(){
 	Max = -1;
@@ -22,7 +22,7 @@ void init(){
 void input(){
 	cin >> n;
 	seller.clear();
-	int i, x, j;
+	LL i, x, j;
 	for(i=0;i<n;i++){
 		cin >> x;
 		seller.pb(x); 
@@ -30,7 +30,7 @@ void input(){
 	buyer.clear();
 	cin >> m;
 	for(i=0;i<m;i++){
-		vector<int>tmp;
+		vector<LL>tmp;
 		tmp.clear();
 		buyer.pb(tmp);
 		for(j=0;j<n;j++){
@@ -40,8 +40,8 @@ void input(){
 	}
 }
 
-int total(){
-	int i, re=0;
+inline LL total(){
+	LL i, re=0;
 	for(i=0;i<match.size();i++){
 		if(match[i]!=-1)
 			re += buyer[i][match[i]]-seller[match[i]];
@@ -49,19 +49,19 @@ int total(){
 	return re;
 }
 
-void DFS(int pos){
+void DFS(LL pos){
 	if(pos==m){
 		tc++;
-//		for(int j=0;j<match.size();j++)cout << match[j]+1 << " ";
+//		for(LL j=0;j<match.size();j++)cout << match[j]+1 << " ";
 //		cout << '\n';
-		int tmp = total();
+		LL tmp = total();
 		if(Max < tmp){
 			Max = tmp;
 			best_match = match;
 		}
 		return;	
 	}
-	int i;
+	LL i;
 	match[pos] = -1;
 	DFS(pos+1);
 	for(i=0;i<n;i++){
@@ -74,7 +74,7 @@ void DFS(int pos){
 	}
 }
 void solve(){
-	int t, i;
+	LL t, i;
 	clock_t start, end;
 	start = clock();
 	cin >> t;
@@ -84,7 +84,8 @@ void solve(){
 		DFS(0);
 		cout << Max << '\n';
 //		cout << tc << '\n';
-		int j;
+//		cout << n << ' ' << m << '\n';
+		LL j;
 		for(j=0;j<best_match.size();j++)cout << best_match[j]+1 << " ";
 		cout << '\n';
 		end = clock();
