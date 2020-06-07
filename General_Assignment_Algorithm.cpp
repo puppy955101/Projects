@@ -54,28 +54,40 @@ void GAA(){
 			buyer_price[i][j] = seller[j];	//buyer want to pay the price
 		}
 	while(!ok){
-//		tc++;
+		tc++;
 //		if(tc>10000)break;
 		for(i=0;i<m;i++){
-			LL tmp = -100000, choice=-1;
+			LL tmp = -1, choice=-1;
 			for(j=0;j<n;j++){
 				if(tmp < buyer[i][j]-buyer_price[i][j])
 					tmp = buyer[i][j]-buyer_price[i][j], choice = j;
 			}
-			if(choice!=-1&&match[i]==choice||final_price[choice] < buyer_price[i][choice]){
+			if(choice!=-1&&(match[i]==choice||final_price[choice] < buyer_price[i][choice])){
+				if(match[i]==choice&&i==0)ok = 1;
+				if(match[i]==choice)ok*=1;
+				else ok = 0;
+//				if(tc>10000)
+//					cout << i << ' ' << ok << '\n';
 				if(use[choice]!=-1)match[use[choice]] = -1;
 				match[i] = choice;
 				use[choice] = i;
 				final_price[choice] = buyer_price[i][choice];
 			}
 			else if(choice!=-1){
-				buyer_price[i][choice]++;	
+				buyer_price[i][choice]++;
+				ok = 0;	
+			}
+			else{
+				if(match[i]!=-1)use[match[i]] = -1;
+				match[i] = choice;
+				if(i==0)ok = 1;
+//				break;	
 			}
 		}
-		for(i=0;i<n;i++)if(use[i]==-1)break;
-		if(i==n)ok = 1;
-		for(i=0;i<m;i++)if(match[i]==-1)break;
-		if(i==m)ok = 1;
+//		for(i=0;i<n;i++)if(use[i]==-1)break;
+//		if(i==n)ok = 1;
+//		for(i=0;i<m;i++)if(match[i]==-1)break;
+//		if(i==m)ok = 1;
 //		for(j=0;j<match.size();j++)cout << match[j]+1 << " ";
 //		cout << '\n';
 //		for(j=0;j<final_price.size();j++)cout << final_price[j] << " ";
