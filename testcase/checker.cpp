@@ -71,8 +71,8 @@ int main(){
 		string C = "HGAA_" + A;
 		string D = "KM_" + A;
 		A = "BF_" + A;
-//		solve(A,B);
-//		solve(A,C);
+		solve(A,B);
+		solve(A,C);
 		solve(A,D);
 	}
 	cout << "Total(" << tk << " / " << ts << ")\n";

@@ -5,7 +5,7 @@ using namespace std;
 vector<LL>seller;
 vector<vector<LL>>buyer_price;
 vector<vector<LL>>buyer;
-LL n, m, Max, mn;
+LL n, m, Max, mn, N;
 vector<LL>match;
 vector<LL>final_price;
 vector<LL>best_match;
@@ -18,7 +18,7 @@ bool vx[MAXN],vy[MAXN];
 bool dfs(int x){
 	if(vx[x])return 0;
 	vx[x]=1;
-	for(int y=0,t;y<n;++y){
+	for(int y=0,t;y<N;++y){
 		if(vy[y])continue;
 		t=lx[x]+ly[y]-g[x][y];
 		if(t==0){
@@ -35,47 +35,45 @@ bool dfs(int x){
 void out(){
 	int i;
 	cout << "lx: ";
-	for(i=0;i<m;i++)cout << lx[i] << ' ';
+	for(i=0;i<N;i++)cout << lx[i] << ' ';
 	cout << "\nly: ";
-	for(i=0;i<n;i++)cout << ly[i] << ' ';	
+	for(i=0;i<N;i++)cout << ly[i] << ' ';	
 	cout << "\nslack_y: ";
-	for(i=0;i<n;i++)cout << slack_y[i] << ' ';
+	for(i=0;i<N;i++)cout << slack_y[i] << ' ';
 	cout << "\nmatch_y: ";	
-	for(i=0;i<n;i++)cout << match_y[i] << ' ';
+	for(i=0;i<N;i++)cout << match_y[i] << ' ';
 	cout << "\n";	
 }
 inline int km(){
-	memset(ly,0,sizeof(int)*n);
-	memset(match_y,-1,sizeof(int)*n);
+	memset(ly,0,sizeof(int)*N);
+	memset(match_y,-1,sizeof(int)*N);
 	if(mn==1){
 		for(int i=0;i<m;i++)
 			for(int j=i+1;j<n;j++)
 				swap(g[i][j],g[j][i]);	
 	}
-	for(int x=0;x<m;++x){
+	for(int x=0;x<N;++x){
 		lx[x]=-INF;
-		for(int y=0;y<n;++y){
+		for(int y=0;y<N;++y){
 			lx[x]=max(lx[x],g[x][y]);
 		}
 	}
-	for(int x=0;x<m;++x){
-		if(lx[x]<0)continue;
-		for(int y=0;y<n;++y)slack_y[y]=INF;
+	for(int x=0;x<N;++x){
+//		if(lx[x]<0)continue;
+		for(int y=0;y<N;++y)slack_y[y]=INF;
 		for(;;){
-			memset(vx,0,sizeof(bool)*m);
-			memset(vy,0,sizeof(bool)*n);
+			memset(vx,0,sizeof(bool)*N);
+			memset(vy,0,sizeof(bool)*N);
 //			cout << x << ": \n";
 //			out();
 			if(dfs(x))break;
+//			out();
 			int cut=INF;
-			for(int y=0;y<n;++y){
+			for(int y=0;y<N;++y){
 				if(!vy[y]&&cut>slack_y[y])cut=slack_y[y];
 			}
-			for(int j=0;j<m;++j){
+			for(int j=0;j<N;++j){
 				if(vx[j])lx[j]-=cut;
-			}
-			for(int j=0;j<n;++j){
-//				if(vx[j])lx[j]-=cut;
 				if(vy[j])ly[j]+=cut;
 				else slack_y[j]-=cut;
 			}
@@ -250,29 +248,32 @@ void solve(){
 //		cout << '\n';
 //		cout << n << ' ' << m << '\n';
 		mn = 0;
-		if(n < m){
-			mn = 1;
-//			cout << n << ' ' << m << '\n';
-			swap(m,n);
-			Max = km();
-//			cout << "\n\n\n\n";
-//			continue;
-		}
-		else
-			Max = km();
+		N = max(m,n)+2;
+//		if(n < m){
+//			mn = 1;
+////			cout << n << ' ' << m << '\n';
+//			swap(m,n);
+//			Max = km();
+////			cout << "\n\n\n\n";
+////			continue;
+//		}
+//		else
+			km();
 		Max = 0;
-		for(j=0;j<n;j++){
+		for(j=0;j<N;j++){
 			if(mn==1)
 				match[j] = match_y[j];
-			else if(match_y[j]!=-1)
+			else if(match_y[j]!=-1&&match_y[j]<match.size())
 				match[match_y[j]] = j;
 		}
 		for(j=0;j<match.size();j++){
-			if(match[j]!=-1 && buyer[j][match[j]]-seller[match[j]]>0)
+			if(match[j]!=-1 && match[j] < n && buyer[j][match[j]]-seller[match[j]]>0)
 				Max += buyer[j][match[j]]-seller[match[j]];
 			else
 				match[j] = -1;
 		}
+		if(n < m)
+			mn = 1;
 		cout << Max << '\n';
 //		if(mn==1)
 //			for(j=0;j<n;j++)cout << match_y[j]+1 << " ";
