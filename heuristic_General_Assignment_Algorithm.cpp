@@ -5,7 +5,7 @@ using namespace std;
 vector<LL>seller;
 vector<vector<LL>>buyer_price;
 vector<vector<LL>>buyer;
-LL n, m, Max;
+LL n, m, Max, nc, mc;
 vector<LL>match;
 vector<LL>final_price;
 vector<LL>best_match;
@@ -14,6 +14,7 @@ void init(){
 	Max = -1;
 	match.clear();
 	use.clear();
+	for(int i=0;i<buyer_price.size();i++)buyer_price[i].clear();
 	buyer_price.clear();
 	final_price.clear();
 	buyer_price.resize(m);
@@ -28,14 +29,20 @@ void init(){
 
 void input(){
 	cin >> n;
+	cin >> nc;
 	seller.clear();
-	LL i, x, j;
+	LL i, x, j, k;
 	for(i=0;i<n;i++){
 		cin >> x;
 		seller.pb(x); 
 	}
+	for(i=0;i<nc-1;i++)
+		for(j=0;j<n;j++)
+			seller.pb(seller[j]);
+	for(i=0;i<buyer.size();i++)buyer[i].clear();
 	buyer.clear();
 	cin >> m;
+	cin >> mc;
 	for(i=0;i<m;i++){
 		vector<LL>tmp;
 		tmp.clear();
@@ -44,7 +51,15 @@ void input(){
 			cin >> x;
 			buyer[i].pb(x);	
 		}
+		for(k=0;k<nc-1;k++)
+			for(j=0;j<n;j++)
+				buyer[i].pb(buyer[i][j]);
 	}
+	for(i=0;i<mc-1;i++)
+		for(j=0;j<m;j++)
+			buyer.pb(buyer[j]);
+	n *= nc;
+	m *= mc;
 }
 bool can_buy(LL i, LL choice){
 	if(choice==-1)return 0;

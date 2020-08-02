@@ -1,10 +1,4 @@
-error: line 14
-	BF_testcase_0.txt: 333
-	GAA_testcase_0.txt: 332
-error: line 15
-	BF_testcase_0.txt: 10 1 4 8 6 5 7 2 
-	GAA_testcase_0.txt: 10 1 2 8 6 5 4 7 
-GAA_testcase_0.txt(2 / 20)
+GAA_testcase_0.txt(0 / 20)
 HGAA_testcase_0.txt(0 / 20)
 KM_testcase_0.txt(0 / 20)
 GAA_testcase_1.txt(0 / 20)
@@ -19,4 +13,4 @@ KM_testcase_3.txt(0 / 20)
 GAA_testcase_4.txt(0 / 20)
 HGAA_testcase_4.txt(0 / 20)
 KM_testcase_4.txt(0 / 20)
-Total(2 / 300)
+Total(0 / 300)

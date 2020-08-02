@@ -6,11 +6,12 @@ vector<LL>seller;
 vector<vector<LL>>buyer_price;
 vector<vector<LL>>buyer;
 LL n, m, Max, mn, N;
+LL nc, mc;
 vector<LL>match;
 vector<LL>final_price;
 vector<LL>best_match;
 vector<LL>use;
-#define MAXN 100
+#define MAXN 1010
 #define INF INT_MAX
 int g[MAXN][MAXN],lx[MAXN],ly[MAXN],slack_y[MAXN];
 int match_y[MAXN];
@@ -114,22 +115,27 @@ inline void init(){
 
 void input(){
 	cin >> n;
+	cin >> nc;
 	seller.clear();
-	for(int i=0;i<100;i++)
-		for(int j=0;j<100;j++){
+	for(int i=0;i<MAXN;i++)
+		for(int j=0;j<MAXN;j++){
 			g[i][j] = 0;
 //			cout << tmp[i][j]  << '\n';
 		}
-	LL i, x, j;
+	LL i, x, j, k;
 	for(i=0;i<n;i++){
 		cin >> x;
 		seller.pb(x); 
 	}
+	for(i=0;i<nc-1;i++)
+		for(j=0;j<n;j++)
+			seller.pb(seller[j]);
 	for(i=0;i<buyer.size();i++){
 		buyer[i].clear();
 	}
 	buyer.clear();
 	cin >> m;
+	cin >> mc;
 //	cout << n << '\n';
 	for(i=0;i<m;i++){
 //		cout << i << '\n';
@@ -143,6 +149,14 @@ void input(){
 			buyer[i].pb(x);	
 		}
 	}
+	for(i=0;i<mc-1;i++)
+		for(j=0;j<m;j++)
+			buyer.pb(buyer[j]);
+	for(i=0;i<m*mc;i++)
+		for(j=0;j<n*nc;j++)
+			g[i][j] = buyer[i][j%n]-seller[j];
+	n *= nc;
+	m *= mc;
 }
 bool can_buy(LL i, LL choice){
 	if(choice==-1)return 0;
@@ -248,7 +262,7 @@ void solve(){
 //		cout << '\n';
 //		cout << n << ' ' << m << '\n';
 		mn = 0;
-		N = max(m,n)+2;
+		N = max(m,n)+3;
 //		if(n < m){
 //			mn = 1;
 ////			cout << n << ' ' << m << '\n';
@@ -266,20 +280,23 @@ void solve(){
 			else if(match_y[j]!=-1&&match_y[j]<match.size())
 				match[match_y[j]] = j;
 		}
+		n /= nc;
+		m /= mc;
 		for(j=0;j<match.size();j++){
-			if(match[j]!=-1 && match[j] < n && buyer[j][match[j]]-seller[match[j]]>0)
-				Max += buyer[j][match[j]]-seller[match[j]];
+			if(match[j]!=-1 && match[j] < n*nc && buyer[j][match[j]%n]-seller[match[j]]>0)
+				Max += buyer[j][match[j]%n]-seller[match[j]];
 			else
 				match[j] = -1;
 		}
 		if(n < m)
 			mn = 1;
+//		cout << seller.size() << '\n';
 		cout << Max << '\n';
 //		if(mn==1)
 //			for(j=0;j<n;j++)cout << match_y[j]+1 << " ";
 //		else
 		for(j=0;j<match.size();j++)cout << match[j]+1 << " ";
-		cout << "\n" << mn << "\n";
+		cout << "\n" << m << ' ' << n << "\n";
 		end = clock();
 		cout << "Time: " << ((double)(end-start))/CLOCKS_PER_SEC << "s\n";
 		start = clock();

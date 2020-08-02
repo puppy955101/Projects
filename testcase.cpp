@@ -6,6 +6,7 @@ vector<int>seller;
 vector<vector<int>>buyer_price;
 vector<vector<int>>buyer;
 int n, m, Max;
+int nc, mc;
 vector<int>match;
 vector<int>final_price;
 vector<int>best_match;
@@ -18,7 +19,9 @@ int randint(int lb, int ub) { // [lb, ub]
 void input(){
 //	cin >> n;
 	n = randint(2,10);
+	nc = randint(1,10/n);
 	cout << n << '\n';
+	cout << nc << '\n';
 	int k = 10000;
 	seller.clear();
 	int i, x, j;
@@ -30,8 +33,10 @@ void input(){
 	}
 	buyer.clear();
 	m = randint(2,10);
-	if(n==m)m++;
+	mc = randint(1,10/m);
+//	if(n==m)m++;
 	cout << m << '\n';
+	cout << mc << '\n';
 	for(i=0;i<m;i++){
 		vector<int>tmp;
 		tmp.clear();

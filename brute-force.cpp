@@ -4,7 +4,7 @@ using namespace std;
 #define pb push_back
 vector<LL>seller;
 vector<vector<LL>>buyer;
-LL n, m, Max;
+LL n, m, Max, nc, mc;
 vector<LL>match;
 vector<LL>best_match;
 vector<LL>use;
@@ -13,7 +13,7 @@ void init(){
 	Max = -1;
 	match.clear();
 	use.clear();
-	match.resize(m);
+	match.resize(m*mc);
 	use.resize(n);
 	best_match.clear();
 	tc = 0;
@@ -21,6 +21,7 @@ void init(){
 
 void input(){
 	cin >> n;
+	cin >> nc;
 	seller.clear();
 	LL i, x, j;
 	for(i=0;i<n;i++){
@@ -29,6 +30,7 @@ void input(){
 	}
 	buyer.clear();
 	cin >> m;
+	cin >> mc;
 	for(i=0;i<m;i++){
 		vector<LL>tmp;
 		tmp.clear();
@@ -44,13 +46,13 @@ inline LL total(){
 	LL i, re=0;
 	for(i=0;i<match.size();i++){
 		if(match[i]!=-1)
-			re += buyer[i][match[i]]-seller[match[i]];
+			re += buyer[i%m][match[i]]-seller[match[i]];
 	}
 	return re;
 }
 
 void DFS(LL pos){
-	if(pos==m){
+	if(pos==m*mc){
 		tc++;
 //		for(LL j=0;j<match.size();j++)cout << match[j]+1 << " ";
 //		cout << '\n';
@@ -65,11 +67,11 @@ void DFS(LL pos){
 	match[pos] = -1;
 	DFS(pos+1);
 	for(i=0;i<n;i++){
-		if(!use[i]){
-			use[i] = 1;
+		if(use[i] < nc){
+			use[i]++;
 			match[pos] = i;
 			DFS(pos+1);
-			use[i] = 0;
+			use[i]--;
 		}
 	}
 }
